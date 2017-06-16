@@ -27,7 +27,7 @@ export default class exampleComponents extends React.Component {
     title: 'Default',
     component: <Default />
   },
-  {
+  /*{
     title: 'Custom date format',
     component: <CustomDateFormat />
   },
@@ -58,7 +58,7 @@ export default class exampleComponents extends React.Component {
   {
     title: 'Custom input',
     component: <CustomInput />
-  },
+  },*/
   {
     title: 'Multiple months',
     component: <MultiMonth />

@@ -135,7 +135,7 @@
 .react-datepicker__input-container { //- interal span
 //.inputDateFormat {
   width: 232px;
-  height: 19px;
+  height: 40px;
   font-family: OpenSans;
   font-size: 14px;
   color: #354a5d; //$textColor; //354a5d
@@ -270,3 +270,7 @@
   background-color: $stripedBackground;
   border: solid 1px $borderColor;
 }*/
+
+.multiWrap DatePicker {
+  margin-bottom: 30px;
+}

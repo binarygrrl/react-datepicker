@@ -1,16 +1,3 @@
-/* Examples to Include
-Default
-Custom Date Format
-Custom CLass Name
-Custom Calendar Classname
-Placeholder Text
-
-Disable
-Fixed Height
-Custom Input
-Multiple Months
-/
-
 /*  Examples to Include: Default  |  Custom Date Format  |  Custom CLass Name  |  Custom Calendar Classname  |  Placeholder Text  |  Date Range  |  Disable  |   Fixed Height  |  Custom Input  |  Multiple Months  */
 
 import React from 'react'
@@ -58,7 +45,9 @@ export default class DateRangePicker extends React.Component {
                 startDate={this.state.startDate}
                 endDate={this.state.endDate}
                 onChange={this.handleChangeEnd}/>
-            // Custom date range picker selection
+        </div>
+        <div className="column">
+            <h3>Custom Date Picker</h3>
             <DatePicker
                 // customInput={<ExampleCustomInput />}
                 dateFormat="MMM, d YYYY"
