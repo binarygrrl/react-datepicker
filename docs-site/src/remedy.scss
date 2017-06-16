@@ -1,0 +1,260 @@
+//http://locahost:8080/#/home
+
+//.react-datepicker__day--selected,
+//.react-datepicker__day--in-selecting-range,
+//.react-datepicker__day--in-range
+
+.react-datepicker__input-container,
+.inputBoxInactive {
+	width: 250px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: $blueBackground; //f9fcff
+	border: solid 1px $borderColor; //d5ebfb
+}
+
+.react-datepicker__input-container.react-datepicker-ignore-onclickoutside,
+.inputBoxActive {
+	width: 250px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	border: solid 1px $borderColor; //d5ebfb
+}
+.react-datepicker__input-container - interal span,
+.inputDateFormat {
+	width: 232px;
+	height: 19px;
+	font-family: OpenSans;
+	font-size: 14px;
+	color: $textColor; //354a5d
+}
+//put as an affer for the above element
+.calendarIcon {
+	width: 16px;
+	height: 16px;
+	object-fit: contain;
+	background-color: #2c3e50;
+}
+//Font and style for date within the input field after entry
+.selectDate {
+	width: 86px;
+	height: 19px;
+	font-family: OpenSans;
+	font-size: 14px;
+	font-style: italic;
+	color: $textColor; //354a5d
+}
+.react-datepicker__header,
+.monthTableHeader {
+	width: 250px;
+	height: 67.1px;
+	background-color: $stripedBackground; //#f3f8fe
+	border: solid 1px $borderColor; //d5ebfb
+}
+.react-datepicker__day-name,
+.weekDays {
+	width: 22px;
+	height: 17px;
+	font-family: OpenSans;
+	font-size: 12px;
+	color: $textColor; //354a5d
+}
+.react-datepicker__month,
+.calendarDaysWrap {
+	width: 250px;
+	height: 194px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	border: solid 1px $borderColor; //d5ebfb
+}
+.react-datepicker__week,
+.dateLabel {
+	width: 17px;
+	height: 160px;
+	font-family: OpenSans;
+	font-size: 14px;
+	line-height: 2.29; //32px
+	text-align: center;
+	color: $blue; //1d93bf
+}
+.react-datepicker__navigation--previous,
+.leftArrow {
+	width: 10px;
+	height: 5px;
+	object-fit: contain;
+	-webkit-transform: rotate(-270deg);
+	transform: rotate(-270deg);
+	background-color: $blue; //1d93bf
+}
+.react-datepicker__navigation--next,
+.rightArrow {
+	width: 10px;
+	height: 5px;
+	object-fit: contain;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	background-color: $blue; //1d93bf
+}
+.react-datepicker__current-month,
+.monthTitle {
+	width: 112px;
+	height: 19px;
+	font-family: OpenSans;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: $textColor; //354a5d
+}
+
+
+//This tag is for days from the previous month - might not need
+.react-datepicker__day {
+    width: 12.43234%;
+    height: 34px;
+}
+.react-datepicker__day--selected,
+.selectedSingleDay {
+	width: 35px;
+	height: 32px;
+	background-color: $blue; //1d93bf
+	color: #fff;
+}
+.selectedStartDay {
+	width: 35px;
+	height: 32px;
+	background-color: $lightViolet; //ad77b3
+	color: #fff;
+}
+.selectedEndDay {
+	width: 35px;
+	height: 32px;
+	background-color: $blue; //1d93bf
+	color: #fff;
+}
+
+.multiSelectedDays {
+	width: 248px;
+	height: 96px;
+	opacity: 0.7;
+	background-color: $lightViolet; //#ad77b3
+}
+//disabled day styles
+.react-datepicker__day--disabled {
+
+}
+//day date from previous month
+.react-datepicker__day--outside-month {
+
+}
+
+.activeDay { //orange today identifier
+	color: #ff9800;
+}
+.twoMonthSpread {
+//.combined-shape {
+	width: 519px;
+	height: 66.1px;
+	background-color: $stripedBackground;
+	border: solid 1px $borderColor;
+}
+
+/***************************************************************************/
+//    React Date Picker Class Names for Dynamic Elements
+/***************************************************************************/
+
+//Parent Styles
+.react-datepicker {} //parent element | calendar.jsx ln 309 return statement
+.react-datepicker__triangle {} //calendar.jsx ln 309 return statement
+
+//Navigation Styles
+.react-datepicker__navigation {}  // calendar.jsx ln187
+.react-datepicker__navigation--previous {}  //calendar.jsx ln187 previous arrow (decrease month)
+.react-datepicker__navigation--next {} //calendar.jsx ln196 next arrow (increase month)
+
+//Year based styles
+.react-datepicker__year-select {} //year_dropdown.jsx ln40 renderSelectMode()
+
+//year_dropdown.jsx ln48 renderReadView()
+.react-datepicker__year-read-view {}
+.react-datepicker__year-read-view--down-arrow {}
+.react-datepicker__year-read-view--selected-year {}
+//end year_dropdown.jsx excerpt
+
+//year_dropdown.jsx ln97 return statement
+.react-datepicker__year-dropdown-container {}
+.react-datepicker__year-dropdown-container--dropdownMode {}
+.react-datepicker__year-dropdown-container--renderedDropdown {}
+//end year_dropdown.jsx excerpt
+
+//Month header wrap based styles
+.react-datepicker__header {} //calendar.jsx ln265 renderMonths()
+.react-datepicker__header__dropdown {} //calendar.jsx ln265 renderMonths()
+.react-datepicker__header__dropdown--dropdownMode {} //calendar.jsx ln265 renderMonths()
+
+//Month based styles
+.react-datepicker__month {} //month.jsx ln113 getClassNames()
+.react-datepicker__month--selecting-range {} //month.jsx ln113 getClassNames()
+//Might also include subclass identifiers (--identifier-name)
+//selectingDate  |  selectsStart  |  selectsEnd
+
+//Current month styles
+.react-datepicker__current-month {} //calendar.jsx ln201 renderCurrentMonth()
+.react-datepicker__current-month--hasMonthDropdown {} //calendar.jsx ln207 renderCurrentMonth()
+.react-datepicker__current-month--hasYearDropdown {} //calendar.jsx ln204 renderCurrentMonth()
+.react-datepicker__month-container {} //calendar.jsx ln264 renderMonths()
+
+//Week based styles
+.react-datepicker__week {} //week.jsx ln78 return statement
+.react-datepicker__week-number {} //week_number.js ln12 return statement
+
+//Today styles
+.react-datepicker__today-button {} //calendar.jsx ln251 renderTodayButton()
+
+//Day based styles
+.react-datepicker__day-name {} //calendar.jsx ln162 :header
+.react-datepicker__day-names {} //calendar.jsx ln273 renderMonths()
+
+//day.jsx ln136 getClassNames()
+.react-datepicker__day {} //(parent node)
+.react-datepicker__day--disabled {} // this.isDisabled(),
+.react-datepicker__day--selected {} // this.isSameDay(this.props.selected),
+.react-datepicker__day--keyboard-selected {} // this.isKeyboardSelected(),
+.react-datepicker__day--highlighted {} // this.isHighlighted(),
+.react-datepicker__day--range-start {} // this.isRangeStart(),
+.react-datepicker__day--range-end {} // this.isRangeEnd(),
+.react-datepicker__day--in-range {} // this.isInRange(),
+.react-datepicker__day--in-selecting-range {} // this.isInSelectingRange(),
+.react-datepicker__day--selecting-range-start {} // this.isSelectingRangeStart(),
+.react-datepicker__day--selecting-range-end {} // this.isSelectingRangeEnd(),
+.react-datepicker__day--today {} // this.isSameDay(moment.utc().utcOffset(this.props.utcOffset)),
+.react-datepicker__day--weekend {} // this.isWeekend(),
+.react-datepicker__day--outside-month {} //this.isOutsideMonth()
+//end day.jsx ln136 excerpt
+
+
+
+/* Calendar Icon
+<!-- png -->
+<img src="img/calendar.png" srcset="img/calendar@2x.png 2x, img/calendar@3x.png 3x" class="calendar">
+
+<!-- svg -->
+<img src="img/calendar.svg" class="calendar">
+*/
+
+/* Left Arrow
+<!-- png -->
+<img src="img/icon-dropdown-copy-3.png" srcset="img/icon-dropdown-copy-3@2x.png 2x, img/icon-dropdown-copy-3@3x.png 3x" class="icon-dropdown-copy-3">
+
+<!-- svg -->
+<img src="img/icon-dropdown-copy-3.svg" class="icon-dropdown-copy-3">
+*/
+
+/* Right Arrow
+<!-- png -->
+<img src="img/icon-dropdown-copy-2.png" srcset="img/icon-dropdown-copy-2@2x.png 2x, img/icon-dropdown-copy-2@3x.png 3x" class="icon-dropdown-copy-2">
+
+<!-- svg -->
+<img src="img/icon-dropdown-copy-2.svg" class="icon-dropdown-copy-2">
+*/

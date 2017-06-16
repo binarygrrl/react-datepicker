@@ -108,3 +108,165 @@
 .example__timezone-selector {
   margin-left: 10px;
 }
+
+
+
+
+/*********************************************************************/
+//Remedy Partner Customized Styles
+/*********************************************************************/
+.react-datepicker__input-container {
+//.inputBoxInactive {
+  //width: 250px;
+  //height: 40px;
+  border-radius: 4px;
+  background-color: #f9fcff; //$blueBackground; //f9fcff
+  border: solid 1px #d5ebfb; //$borderColor; //d5ebfb
+}
+
+.react-datepicker__input-container.react-datepicker-ignore-onclickoutside {
+//.inputBoxActive {
+  //width: 250px;
+  //height: 40px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #d5ebfb; //$borderColor; //d5ebfb
+}
+.react-datepicker__input-container { //- interal span
+//.inputDateFormat {
+  width: 232px;
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 14px;
+  color: #354a5d; //$textColor; //354a5d
+}
+//put as an ::after for the above element
+.calendarIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  background-color: #2c3e50;
+}
+//Font and style for date within the input field after entry
+.selectDate {
+  //width: 86px;
+  //height: 19px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-style: italic;
+  color: #354a5d; //$textColor; //354a5d
+}
+.react-datepicker__header {
+//.monthTableHeader {
+  //width: 250px;
+  //height: 67.1px;
+  background-color: #f3f8fe; //$stripedBackground; //#f3f8fe
+  border: solid 1px #d5ebfb; //$borderColor; //d5ebfb
+}
+.react-datepicker__day-name {
+//.weekDays {
+  width: 12.14323%;
+  //height: 17px;
+  //font-family: OpenSans;
+  font-size: 12px;
+  color: #354a5d; //$textColor; //354a5d
+}
+.react-datepicker__month {
+//.calendarDaysWrap {
+  //width: 250px;
+  //height: 194px;
+  //border-radius: 4px;
+  background-color: #ffffff;
+  margin: 0;
+    padding: 0;
+}
+.react-datepicker__week {
+//.dateLabel {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 2.29; //32px
+  text-align: center;
+  color: #1d93bf; //$blue; //1d93bf
+}
+.react-datepicker__navigation--previous {
+//.leftArrow {
+  //width: 10px;
+  //height: 5px;
+  object-fit: contain;
+  -webkit-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+  //background-color: #1d93bf; //$blue; //1d93bf
+}
+.react-datepicker__navigation--next {
+//.rightArrow {
+  //width: 10px;
+  //height: 5px;
+  object-fit: contain;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  //background-color: #1d93bf; //$blue; //1d93bf
+}
+.react-datepicker__current-month {
+//.monthTitle {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #354a5d; //$textColor; //354a5d
+}
+
+
+//This tag is for days from the previous month - might not need
+.react-datepicker__day {
+    //width: 12.43234%;
+    width: 33.22px;
+    height: 37px;
+    color: #1d93bf;
+    border: solid 1px #d5ebfb;
+    margin: 0;
+}
+.react-datepicker__day--selected {
+//.selectedSingleDay {
+  background-color: #1d93bf; //$blue; //1d93bf
+  color: #fff !important;
+}
+.selectedStartDay {
+  width: 35px;
+  height: 32px;
+  background-color: #ad77b3; //$lightViolet; //ad77b3
+  color: #fff;
+}
+.selectedEndDay {
+  width: 35px;
+  height: 32px;
+  background-color: #1d93bf; //$blue; //1d93bf
+  color: #fff;
+}
+
+.multiSelectedDays {
+  width: 248px;
+  height: 96px;
+  opacity: 0.7;
+  background-color: #ad77b3; //$lightViolet; //#ad77b3
+}
+//disabled day styles
+.react-datepicker__day--disabled {
+
+}
+//day date from previous month
+.react-datepicker__day--outside-month {
+    content: '';
+    color: #fff;
+}
+.react-datepicker__day--today {
+  color: #ff9800;
+  font-weight: normal;
+}
+/*.twoMonthSpread {
+//.combined-shape {
+  width: 519px;
+  height: 66.1px;
+  background-color: $stripedBackground;
+  border: solid 1px $borderColor;
+}*/

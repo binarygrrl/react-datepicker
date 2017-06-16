@@ -17,6 +17,7 @@ import MultiMonthDrp from './examples/multi_month_drp'
 
 import 'react-datepicker/dist/react-datepicker.css'
 import './style.scss'
+//import './remedystyles.scss'
 
 export default class exampleComponents extends React.Component {
   componentDidMount () {
