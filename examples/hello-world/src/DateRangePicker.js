@@ -39,7 +39,7 @@ export default class DateRangePicker extends React.Component {
                 endDate={this.state.endDate}
                 onChange={this.handleChangeStart}
                 placeholderText="Select Start Date"
-                dateFormat="MMM, d YYYY"
+                dateFormat="MMM, D YYYY"
                 className=""
                 calendarClassName=""
             />
@@ -49,7 +49,7 @@ export default class DateRangePicker extends React.Component {
                 endDate={this.state.endDate}
                 onChange={this.handleChangeEnd}
                 placeholderText="Select Start Date"
-                dateFormat="MMM, d YYYY"
+                dateFormat="MMM, D YYYY"
                 className=""
                 calendarClassName=""
             />

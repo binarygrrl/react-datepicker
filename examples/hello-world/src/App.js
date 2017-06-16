@@ -15,9 +15,11 @@ class App extends Component {
 
    constructor (props) {
     super(props)
-    this.state = {
-      startDate: moment(),
-      endDate: moment()
+    let today = new Date()
+    this.state = {      
+      startDate: moment(today),
+      endDate: moment(today),
+      placeholder: 'Select Date'
     }
   }
 
@@ -44,36 +46,40 @@ class App extends Component {
             <DatePicker
                 selected={this.state.startDate}
                 selectsStart
-                //startDate={this.state.startDate}
+                startDate={this.state.startDate}
                 endDate={this.state.endDate}
                 onChange={this.handleChangeStart}
-                dateFormat="MMM, d YYYY"
+                dateFormat="MMM, D YYYY"
                 className=""
                 calendarClassName=""
                 placeholderText="Select Start Date"
             />
             <DatePicker
+                placeholderText="Select End Date"
                 selected={this.state.endDate}
                 selectsEnd
-                //startDate={this.state.startDate}
+                startDate={this.state.startDate}
                 endDate={this.state.endDate}
                 onChange={this.handleChangeEnd}
-                dateFormat="MMM, d YYYY"
+                dateFormat="MMM, D YYYY"
                 className=""
                 calendarClassName=""
-                placeholderText="Select End Date"
             />
         </div>
         <div className="column">
-            <h3>Custom Date Picker</h3>
+            <h3>Multi Date View</h3>
             <DatePicker
-                selected={this.state.startDate}
-                onChange={this.handleChange}
-                dateFormat="MMM, d YYYY"
-                className=""
-                calendarClassName=""
                 placeholderText="Select Date"
-                monthsShown={2}/>
+                selected={this.state.startDate}
+                onSelect={this.state.startDate}
+                onChange={this.handleChange}
+                startDate={this.state.startDate}
+                endDate={this.state.endDate}
+                dateFormat="MMM, D YYYY"
+                className=""
+                calendarClassName=""                
+                //monthsShown={2}
+                />
         </div>
     </div>
   }

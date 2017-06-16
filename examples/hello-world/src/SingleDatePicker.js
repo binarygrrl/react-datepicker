@@ -24,7 +24,7 @@ export default class SingleDatePicker extends React.Component {
     return <div className="row">
         <div className="column">
             <DatePicker
-                dateFormat="MMM, d YYYY"
+                dateFormat="MMM, D YYYY"
                 selected={this.state.startDate}
                 onChange={this.handleChange}
                 className=""
