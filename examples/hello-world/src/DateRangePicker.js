@@ -1,19 +1,10 @@
-import React, { Component } from 'react';
-import DatePicker from 'react-datepicker';
-import moment from 'moment';
+/*  Examples to Include: Default  |  Custom Date Format  |  Custom CLass Name  |  Custom Calendar Classname  |  Placeholder Text  |  Date Range  |  Disable  |   Fixed Height  |  Custom Input  |  Multiple Months  */
+import React from 'react'
+import DatePicker from 'react-datepicker'
+import moment from 'moment'
 
-import 'react-datepicker/dist/react-datepicker.css';
-import './remedyStyles.css';
-
-class App extends Component {
-/*  constructor() {
-    super();
-    this.state = {
-      startDate: moment()
-    };
-  }*/
-
-   constructor (props) {
+export default class DateRangePicker extends React.Component {
+  constructor (props) {
     super(props)
     this.state = {
       startDate: moment(),
@@ -44,40 +35,27 @@ class App extends Component {
             <DatePicker
                 selected={this.state.startDate}
                 selectsStart
-                //startDate={this.state.startDate}
+                startDate={this.state.startDate}
                 endDate={this.state.endDate}
                 onChange={this.handleChangeStart}
+                placeholderText="Select Start Date"
                 dateFormat="MMM, d YYYY"
                 className=""
                 calendarClassName=""
-                placeholderText="Select Start Date"
             />
             <DatePicker
                 selected={this.state.endDate}
                 selectsEnd
-                //startDate={this.state.startDate}
                 endDate={this.state.endDate}
                 onChange={this.handleChangeEnd}
+                placeholderText="Select Start Date"
                 dateFormat="MMM, d YYYY"
                 className=""
                 calendarClassName=""
-                placeholderText="Select End Date"
             />
-        </div>
-        <div className="column">
-            <h3>Custom Date Picker</h3>
-            <DatePicker
-                selected={this.state.startDate}
-                onChange={this.handleChange}
-                dateFormat="MMM, d YYYY"
-                className=""
-                calendarClassName=""
-                placeholderText="Select Date"
-                monthsShown={2}/>
         </div>
     </div>
   }
-
 }
 
-export default App;
+export default DateRangePicker;
