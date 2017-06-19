@@ -46,6 +46,7 @@ export default class DateRangePicker extends React.Component {
             <DatePicker
               selected={this.state.endDate}
               selectsEnd
+              startDate={this.state.startDate}
               endDate={this.state.endDate}
               onChange={this.handleChangeEnd}
               placeholderText="Select End Date"

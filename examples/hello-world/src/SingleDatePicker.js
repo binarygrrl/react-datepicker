@@ -10,12 +10,17 @@ export default class SingleDatePicker extends React.Component {
     super()
     this.state = {
       startDate: moment()
+      //selected: "Select date"
     }
   }
 
+  //On Change update value in the input
+
   handleChange = (date) => {
+    //let startDate = this.state.startDate;
     this.setState({
       startDate: date
+      //selected: startDate
     })
   }
 
@@ -24,7 +29,8 @@ export default class SingleDatePicker extends React.Component {
         <div className="column">
             <DatePicker          
               dateFormat="MMM, D YYYY"
-              selected={this.state.startDate}
+              //selected={this.state.selected}
+              //selected={this.state.startDate}
               onChange={this.handleChange}
               className="singleDatePicker"
               calendarClassName="singleCalendar"
