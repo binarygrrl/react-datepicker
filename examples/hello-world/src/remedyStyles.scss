@@ -161,3 +161,26 @@
 .multiWrap DatePicker {
   margin-bottom: 30px;
 }
+
+.react-datepicker__day--keyboard-selected {} // this.isKeyboardSelected(),
+.react-datepicker__day--highlighted {
+    color: #fff !important;
+} // this.isHighlighted(),
+.react-datepicker__day--range-start {
+    color: #fff !important;
+} // this.isRangeStart(),
+.react-datepicker__day--range-end {
+    color: #fff !important;
+} // this.isRangeEnd(),
+.react-datepicker__day--in-range {
+    color: #fff !important;
+} // this.isInRange(),
+.react-datepicker__day--in-selecting-range {
+    color: #fff !important;
+} // this.isInSelectingRange(),
+.react-datepicker__day--selecting-range-start {
+    color: #fff !important;
+} // this.isSelectingRangeStart(),
+.react-datepicker__day--selecting-range-end {
+    color: #fff !important;
+} // this.isSelectingRangeEnd(),
