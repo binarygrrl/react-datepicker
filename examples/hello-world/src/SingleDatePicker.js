@@ -1,6 +1,5 @@
 /*   Examples to Include: Default  |  Custom Date Format  |  Custom CLass Name  |  Custom Calendar Classname  |  Placeholder Text  |  Disable  |   Fixed Height  |  Custom Input  */
 import React from 'react'
-//import PropTypes from 'prop-types'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
 
@@ -23,6 +22,25 @@ export default class SingleDatePicker extends React.Component {
   render () {
     return <div className="row">
         <div className="column">
+            <DatePicker          
+              dateFormat="MMM, D YYYY"
+              selected={this.state.startDate}
+              onChange={this.handleChange}
+              className="singleDatePicker"
+              calendarClassName="singleCalendar"
+              placeholderText="Select Date"                 
+            />
+        </div>
+    </div>
+  }
+}
+
+export default SingleDatePicker;
+
+
+/* render () {
+    return <div className="row">
+        <div className="column">
             <DatePicker
                 dateFormat="MMM, D YYYY"
                 selected={this.state.startDate}
@@ -32,7 +50,4 @@ export default class SingleDatePicker extends React.Component {
                 placeholderText="Select Date" />
         </div>
     </div>
-  }
-}
-
-export default SingleDatePicker;
+  }*/

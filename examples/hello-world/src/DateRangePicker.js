@@ -33,25 +33,25 @@ export default class DateRangePicker extends React.Component {
     return <div className="row">
         <div className="column">
             <DatePicker
-                selected={this.state.startDate}
-                selectsStart
-                startDate={this.state.startDate}
-                endDate={this.state.endDate}
-                onChange={this.handleChangeStart}
-                placeholderText="Select Start Date"
-                dateFormat="MMM, D YYYY"
-                className=""
-                calendarClassName=""
+              selected={this.state.startDate}
+              selectsStart
+              startDate={this.state.startDate}
+              endDate={this.state.endDate}
+              onChange={this.handleChangeStart}
+              placeholderText="Select Start Date"
+              dateFormat="MMM, D YYYY"
+              className="startDateInput"
+              calendarClassName="dateRangeCalendar"
             />
             <DatePicker
-                selected={this.state.endDate}
-                selectsEnd
-                endDate={this.state.endDate}
-                onChange={this.handleChangeEnd}
-                placeholderText="Select Start Date"
-                dateFormat="MMM, D YYYY"
-                className=""
-                calendarClassName=""
+              selected={this.state.endDate}
+              selectsEnd
+              endDate={this.state.endDate}
+              onChange={this.handleChangeEnd}
+              placeholderText="Select End Date"
+              dateFormat="MMM, D YYYY"
+              className="endDateInput"
+              calendarClassName="dateRangeCalendar"
             />
         </div>
     </div>
@@ -59,3 +59,56 @@ export default class DateRangePicker extends React.Component {
 }
 
 export default DateRangePicker;
+
+
+
+  /* <div className="row">
+    <div className="column">
+
+      <h3>App Range Picker</h3>
+        <DatePicker
+            selected={this.state.startDate}
+            selectsStart
+            startDate={this.state.startDate}
+            endDate={this.state.endDate}
+            onChange={this.handleChangeStart}
+            dateFormat="MMM, D YYYY"
+            className="appRange"
+            calendarClassName=""
+            placeholderText="Select Start Date"
+        />
+        <DatePicker
+            placeholderText="Select End Date"
+            selected={this.state.endDate}
+            selectsEnd
+            startDate={this.state.startDate}
+            endDate={this.state.endDate}
+            onChange={this.handleChangeEnd}
+            dateFormat="MMM, D YYYY"
+            className=""
+            calendarClassName=""
+        />
+    </div>
+  </div> */
+
+
+
+/*  1st Attempt to Make one Input for a Range
+  <div className="row">
+    <div className="column">
+        <h3>Multi Date View</h3>
+        <DatePicker
+            placeholderText="Select Date"
+            selected={this.state.startDate}
+            onSelect={this.state.startDate}
+            onChange={this.handleChange}
+            startDate={this.state.startDate}
+            endDate={this.state.endDate}
+            dateFormat="MMM, D YYYY"
+            className=""
+            calendarClassName=""                
+            monthsShown={2}
+            />
+    </div>
+  </div>
+*/

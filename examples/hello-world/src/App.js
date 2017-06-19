@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DatePicker from 'react-datepicker';
+//import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import SingleDatePicker from './SingleDatePicker'
 import DateRangePicker from './DateRangePicker'
@@ -44,51 +44,6 @@ class App extends Component {
 
   render () {
     return <div class="datePickWrap">
-        <div className="row">
-          <div className="column">
-
-            <h3>App Range Picker</h3>
-              <DatePicker
-                  selected={this.state.startDate}
-                  selectsStart
-                  startDate={this.state.startDate}
-                  endDate={this.state.endDate}
-                  onChange={this.handleChangeStart}
-                  dateFormat="MMM, D YYYY"
-                  className=""
-                  calendarClassName=""
-                  placeholderText="Select Start Date"
-              />
-              <DatePicker
-                  placeholderText="Select End Date"
-                  selected={this.state.endDate}
-                  selectsEnd
-                  startDate={this.state.startDate}
-                  endDate={this.state.endDate}
-                  onChange={this.handleChangeEnd}
-                  dateFormat="MMM, D YYYY"
-                  className=""
-                  calendarClassName=""
-              />
-          </div>
-        </div>
-        <div className="row">
-          <div className="column">
-              <h3>Multi Date View</h3>
-              <DatePicker
-                  placeholderText="Select Date"
-                  selected={this.state.startDate}
-                  onSelect={this.state.startDate}
-                  onChange={this.handleChange}
-                  startDate={this.state.startDate}
-                  endDate={this.state.endDate}
-                  dateFormat="MMM, D YYYY"
-                  className=""
-                  calendarClassName=""                
-                  monthsShown={2}
-                  />
-          </div>
-        </div>
         <div className="row">
           <div className="column">
             <h3>Single Date Picker</h3>
