@@ -52,7 +52,7 @@
 }
 .react-datepicker__day-name {
 /*//.weekDays {*/
-  width: 12.14323%;
+  width: 12%; /*.14323%;*/
   /*//height: 17px;
   //font-family: OpenSans;*/
   font-size: 12px;
@@ -75,32 +75,38 @@
   text-align: center;
   color: #1d93bf; /*//$blue; //1d93bf*/
 }
+.react-datepicker__navigation {
+  border: 0.35rem solid transparent;
+}
 .react-datepicker__navigation--previous {
-/*//.leftArrow {
-  //width: 10px;
-  //height: 5px;*/
+/*.leftArrow {*/
   object-fit: contain;
-  -webkit-transform: rotate(-270deg);
-  transform: rotate(-270deg);
+  /*-webkit-transform: rotate(-270deg);
+  transform: rotate(-270deg);*/
   /*//background-color: #1d93bf; //$blue; //1d93bf*/
+  background: url(/assets/icon-dropdown-copy-3@3x.png) no-repeat scroll 7px 7px;
+  border-right-color: #1d93bf;
 }
 .react-datepicker__navigation--next {
 /*//.rightArrow {
   //width: 10px;
   //height: 5px;*/
   object-fit: contain;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+ /* -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);*/
+  border-left-color: #1d93bf;
   /*//background-color: #1d93bf; //$blue; //1d93bf*/
 }
 .react-datepicker__current-month {
 /*//.monthTitle {*/
-  font-family: OpenSans;
+  /*font-family: OpenSans;*/
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-align: center;
   color: #354a5d; /*//$textColor; //354a5d*/
+  margin-bottom: 10px;
 }
 
 /*//This tag is for days from the previous month - might not need*/
@@ -111,6 +117,7 @@
     color: #1d93bf;
     border: solid 1px #d5ebfb;
     margin: 0;
+    line-height: 1.87rem;
 }
 .react-datepicker__day--selected {
 /*//.selectedSingleDay {*/
