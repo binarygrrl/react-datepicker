@@ -1,16 +1,23 @@
 /*  Examples to Include: Default  |  Custom Date Format  |  Custom CLass Name  |  Custom Calendar Classname  |  Placeholder Text  |  Date Range  |  Disable  |   Fixed Height  |  Custom Input  |  Multiple Months  */
 import React from 'react'
 import DatePicker from 'react-datepicker'
-import moment from 'moment'
+//import moment from 'moment'
 
 export default class DateRangePicker extends React.Component {
-  constructor (props) {
+   state = {
+    startDate: null,
+    endDate: null
+  }
+
+  //react-datepicker__day react-datepicker__day--range-end react-datepicker__day--in-range
+
+/*  constructor (props) {
     super(props)
     this.state = {
       startDate: moment(),
       endDate: moment()
     }
-  }
+  }*/
 
   handleChange = ({ startDate, endDate }) => {
     startDate = startDate || this.state.startDate
