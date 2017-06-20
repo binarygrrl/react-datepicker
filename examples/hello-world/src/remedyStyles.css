@@ -19,12 +19,12 @@
   border: solid 1px #d5ebfb; /*//$borderColor; //d5ebfb*/
   background-color: #f9fcff;
   font-style: italic;
-  background: url(assets/calendar.png) no-repeat scroll 182px 7px;
+  background: url(assets/calendar 2.png) no-repeat scroll 182px 7px;
 }
 .react-datepicker__tether-enabled input {
   background-color: #fff;
   font-style: normal;
-  background: url(assets/calendar 2.png) no-repeat scroll 182px 7px;
+  background: url(assets/calendar.png) no-repeat scroll 182px 7px;
 }
 .react-datepicker__input-container.react-datepicker-ignore-onclickoutside {
 /*//.inputBoxActive {*/
@@ -73,8 +73,8 @@
   padding: 0;
 }
 .react-datepicker__week {
-/*//.dateLabel {*/  
-  font-size: 14px;  
+/*//.dateLabel {*/
+  font-size: 14px;
   text-align: center;
   color: #1d93bf; /*//$blue; //1d93bf*/
 }
